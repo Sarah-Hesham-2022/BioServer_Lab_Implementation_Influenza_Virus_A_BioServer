@@ -1,0 +1,1113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+div.container{
+    background: radial-gradient(859px at 10% 20%, rgb(245, 220, 154) 0%, rgb(164, 78, 51) 90%);
+    background-size: cover;
+}
+
+div.header{
+    background-color: #ffeaa7;
+    background-image: linear-gradient(315deg,  rgb(164, 78, 51) 0%, #000000 74%);
+    height: 15%;
+    display: flex;
+}
+
+div.header h2{
+    margin-top: 25px;
+    margin-left: 180px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+div.header h2:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+} 
+
+
+.logo{
+    width: 300px;
+    cursor: pointer;
+    padding: 20px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.logo:hover{
+	transform: scale(1.1);
+}
+
+div.intro1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.intro1 .card{
+    height: 500px;
+    width: 400px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.imgg{
+    width: 650px;
+    height: 650px; 
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.description{
+    height: 170px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 25px;
+    background: rgba(27, 27, 27, 0.5);
+    color: white;
+    transition: 0.5s;
+}
+
+h1{
+    margin: 10px;
+    font-size: 40px;
+}
+
+p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+    line-height: 1.4;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .description{
+    height: 450px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: justify;
+}
+
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+
+.intro2{
+    width: 100%;
+    height: 100%;   
+}
+
+.intro2 h1{
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    padding-top: 40px;
+}
+
+.top-row{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 50%;
+    overflow: hidden;
+}
+
+.biocard{
+    width: 450px;
+    height: 350px;
+    margin: auto;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.inner_card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card_front, .card_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.gc-cont{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url("../images/dna-base-pair-gc3.jpg");
+    background-position: center;
+    background-size: contain;
+}
+
+.transcription{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("../images/transcription2.jpg");
+    background-position: center;
+    background-size: contain;
+}
+
+.complement{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url("../images/complement.jpg");
+    background-position: center;
+    background-size: contain;
+}
+
+.translation{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url("../images/translation.jpg");
+    background-position: center;
+    background-size: contain;
+}
+
+span{
+    display: inline-block;
+    width: 300px;
+    padding: 14px 0;
+    margin-top: 140px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-weight: bold;
+    transition: transform 1s;
+    text-align: center;
+    font-size: 25px;
+}
+
+.card_back{
+    background: #1c1f54;
+    transform: rotateX(180deg);
+}
+
+.biocard:hover .inner_card{
+    transform: rotateX(-180deg);
+}
+
+.biocard:hover span{
+    transform: translateY(140px);
+}
+
+.card_back h3{
+    display: inline-block;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+    margin-top: 50px;
+    line-height: 2;
+}
+
+.bottom-row{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.form_content{
+    margin: 70px auto 0px auto;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    height: 20%;
+    font-size: 20px;
+}
+
+div.form_content h1{
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+div.personal_info fieldset{
+    border: 1px solid #fff;
+    width: 90%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+div.personal_info fieldset .title{
+    margin-bottom:0px;
+    margin-left: 85px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+div.personal_info .one, div.personal_info .two, div.personal_info .three, div.personal_info .four{
+    display: flex;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+
+div.personal_info .one input#name{
+    margin-left: 10px ;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+} 
+
+div.personal_info .one input#name:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+} 
+
+div.personal_info .one [for=dob]{
+    margin-left: 168px ;
+}
+
+div.personal_info .one input#dob{
+    margin-left: 17px ;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.personal_info .one input#dob:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+} 
+
+div.personal_info .two input[value=male]{
+    margin-left: 35px;
+}
+
+
+div.personal_info .two input[value=female]{
+    margin-left: 100px;
+}
+
+div.personal_info .two label[for=occupation]{
+    margin-left: 220px ;
+}
+
+div.personal_info .two input#occupation{
+    margin-left: 23px ;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.personal_info .two input#occupation:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+} 
+
+div.personal_info .three input#mail{
+    margin-left: 50px ;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.personal_info .three input#mail:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+} 
+
+div.personal_info .three label[for=phone]{
+    margin-left: 172px;
+}
+
+div.personal_info .three input#phone{
+    margin-left: 36px ;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.personal_info .three input#phone:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+} 
+
+div.personal_info .four input#address{
+    margin-left: 28px ;
+    width: 870px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.personal_info .four input#address:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+} 
+
+div.vip_info fieldset{
+    border: 1px solid #fff;
+    width: 90%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+div.vip_info fieldset .title{
+    margin-bottom:0px;
+    margin-left: 85px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+div.vip_info .one, div.vip_info .two{
+    display: flex;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+div.vip_info .one{
+    display: flex;
+    flex-direction: column;
+}
+
+div.vip_info .one .question{
+    font-size: 25px;
+}
+
+div.vip_info .one .answers{
+    display: flex;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+div.vip_info .one .answers .right{
+    margin-left: 150px;
+}
+
+div.vip_info .two{
+    display: flex;
+    flex-direction: column;
+}
+
+div.vip_info .two .question{
+    font-size: 25px;
+}
+
+div.vip_info .two .answers{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+div.preferences fieldset{
+    border: 1px solid #fff;
+    width: 90%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+div.preferences fieldset .title{
+    margin-bottom:0px;
+    margin-left: 40px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+div.preferences .options{
+    text-align: left;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    margin-left: 50px;
+    line-height: 1.6;
+}
+
+div.influ_choice fieldset{
+    border: 1px solid #fff;
+    width: 90%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+div.influ_choice fieldset .title{
+    margin-bottom:0px;
+    margin-left: 40px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+div.influ_choice .availabel_genes{
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+div.influ_choice table{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    width: 95%;
+    border: 1px solid #bdc3c7;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.influ_choice table tr{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+table th, td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table #header{
+    background-color: #ffeaa7;
+    background-image: linear-gradient(315deg,  rgb(164, 78, 51) 0%, #000000 74%);
+    color: #fff;
+}
+
+table tr:hover{
+    background-color: #ffeaa7;
+    background-image: linear-gradient(315deg,  rgb(164, 78, 51) 0%, #000000 74%);
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.influ_choice .seq_id{
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+div.influ_choice .seq_id input{
+    margin-left: 10px ;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.influ_choice .seq_id input:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.influ_choice .question{
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+div.influ_choice .answers{
+    margin-left: 50px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+div.another_seq_choice fieldset{
+    border: 1px solid #fff;
+    width: 90%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+div.another_seq_choice fieldset .title{
+    margin-bottom:0px;
+    margin-left: 40px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+div.another_seq_choice .one{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.another_seq_choice .one label{
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+div.another_seq_choice .one textarea{
+    width: 91%;
+    align-self: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.another_seq_choice .one textarea:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+} 
+
+div.another_seq_choice .two{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+div.another_seq_choice .two [for=seq_id2]{
+    margin-left: 50px;
+
+}
+
+div.another_seq_choice .two [for=organism_name1]{
+    margin-left: 100px;
+}
+
+div.another_seq_choice .two input{
+    margin-left: 10px;
+    width: 250px;
+    align-self: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.another_seq_choice .two input:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+} 
+
+div.another_seq_choice .three{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+div.another_seq_choice .three [for=gene_type1]{
+    margin-left: 50px;
+  
+}
+
+div.another_seq_choice .three [for=gene_symbol1]{
+    margin-left: 100px;
+    
+}
+
+div.another_seq_choice .three #gene_type1{
+    margin-left: 28px;
+    width: 250px;
+    align-self: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.another_seq_choice .three #gene_type1:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+} 
+
+div.another_seq_choice .three #gene_symbol1{
+    margin-left: 20px;
+    width: 360px;
+    align-self: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.another_seq_choice .three #gene_symbol1:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+} 
+
+div.another_seq_choice .four{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+div.another_seq_choice .four [for=locus_tag1]{
+    margin-left: 50px;
+  
+}
+
+div.another_seq_choice .four [for=description1]{
+    margin-left: 100px;
+    
+}
+
+div.another_seq_choice .four #locus_tag1{
+    margin-left: 35px;
+    width: 250px;
+    align-self: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.another_seq_choice .four #locus_tag1:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+} 
+
+div.another_seq_choice .four #description1{
+    margin-left: 20px;
+    width: 380px;
+    align-self: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.another_seq_choice .four #description1:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+} 
+
+div.another_seq_choice .five{
+    margin-left: 50px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+div.another_seq_choice .five .question{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+div.inserted_seq fieldset{
+    border: 1px solid #fff;
+    width: 90%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+div.inserted_seq fieldset .title{
+    margin-bottom: 10px;
+    margin-left: 40px;
+    font-size: 25px;
+    /* padding: 10px; */
+}
+
+
+div.inserted_seq .choice .title{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+div.inserted_seq .choice .options{
+    margin-left: 50px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+ div.inserted_seq .seq_id{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.inserted_seq .seq_id label{
+    margin-left: 50px;
+}
+
+div.inserted_seq .seq_id input{
+    margin-left: 15px ;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.inserted_seq .seq_id input:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+} 
+
+div.inserted_seq .functions{
+    margin-left: 50px;
+    line-height: 1.6;
+}
+
+div.inserted_seq .functions .question label{
+    font-size: 25px;
+}
+
+div.inserted_seq .functions .question .answers{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+
+div.inserted_seq .update .one{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.inserted_seq .update .one label{
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+div.inserted_seq .update .one textarea{
+    width: 91%;
+    align-self: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.inserted_seq .update .one textarea:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.inserted_seq .update .two{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+div.inserted_seq .update .two [for=seq_id4]{
+    margin-left: 50px;
+}
+
+div.inserted_seq .update .two [for=organism_name2]{
+    margin-left: 50px;
+}
+
+div.inserted_seq .update .two input{
+    margin-left: 10px;
+    width: 220px;
+    align-self: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.inserted_seq .update .two input:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.inserted_seq .update .three{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+div.inserted_seq .update .three [for=gene_type2]{
+    margin-left: 50px;
+  
+}
+
+div.inserted_seq .update .three [for=gene_symbol2]{
+    margin-left: 50px;
+    
+}
+
+div.inserted_seq .update .three #gene_type2{
+    margin-left: 28px;
+    width: 220px;
+    align-self: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.inserted_seq .update .three #gene_type2:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.inserted_seq .update .three #gene_symbol2{
+    margin-left: 20px;
+    width: 330px;
+    align-self: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.inserted_seq .update .three #gene_symbol2:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.inserted_seq .update .four{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+div.inserted_seq .update .four [for=locus_tag2]{
+    margin-left: 50px;
+}
+
+div.inserted_seq .update .four [for=description2]{
+    margin-left: 50px;
+}
+
+div.inserted_seq .update .four #locus_tag2{
+    margin-left: 35px;
+    width: 220px;
+    align-self: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.inserted_seq .update .four #locus_tag2:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.inserted_seq .update .four #description2{
+    margin-left: 20px;
+    width: 350px;
+    align-self: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+div.inserted_seq .update .four #description2:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+div.inserted_seq .delete_seq{
+    display: flex;
+}
+
+div.inserted_seq .delete_seq label{
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+div.inserted_seq .delete_seq input{
+    width: 250px;
+    align-self: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+div.sub-res{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 1px;
+    border-color: rgb(192, 192, 192);
+    border-width: 2px;
+    border-style: groove;
+    border-image: initial;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+div.sub-res .submit{
+    height: 50px;
+    width: 100px;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight:500;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 50px;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #332a2a 0%, #a85823 74%);
+    border-radius: 10px;
+}
+
+div.sub-res .submit:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.sub-res .reset{
+    height: 50px;
+    width: 100px;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight:500;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #252020 0%, #a85823 74%);
+    border-radius: 10px;
+}
+
+div.sub-res .reset:hover{
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), 
+    -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+

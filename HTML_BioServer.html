@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS_BioServer.css">
+    <link rel="icon" href="icon/icon.ico">
+    <title>Influenza Bioserver</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/logo.png" class="logo" alt="Sorry,can't display image">
+            <h2>WELCOME TO OUR BIOSERVER !!</h2>
+        </div>
+
+        <div class="intro1">
+            <div class="card">
+                <img src="images/bioserver.jpg" alt="About Influenza Bioserver" class="imgg">
+                <div class="description">
+                    <h1>About Influenza Bioserver</h1>
+                    <p>
+                        We introduce our Influenza Bioserver, which is mainly concerned with DNA Sequences. <br>
+                        We are interested in Influenza Virus A; as our main biological sequence. <br>
+                        There are many biological functions that can be performed on sequences, whether those sequences are in our database or you want to enter them yourself.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/bioseq_analysis.jpg" alt="About Biosequences Analysis" class="imgg">
+                <div class="description">
+                    <h1>About Biosequences Analysis</h1>
+                    <p>
+                        Biological sequence analysis compares, aligns, indexes, and analyzes biological sequences <br>
+                        and thus plays a crucial role in bioinformatics and modern biology. <br>
+                        Sequence alignment is based on the fact that all living organisms are related by evolution.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/influenza.jpg" alt="About Influenza Virus A" class="imgg">
+                <div class="description">
+                    <h1>About Influenza Virus A</h1>
+                    <p>
+                        Influenza A is a type of virus that causes influenza (the flu)
+                        a highly contagious respiratory illness. <br>
+                        The other types of influenza virus are type B and type C. <br>
+                        If you get it, you will need to rest at home and avoid infecting others. <br>
+                        Vaccination can protect you against influenza A.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="intro2">
+            <h1>Some Of Available Biological Functions</h1>
+            <div class="top-row">
+                <div class="col">
+                    <div class="biocard">
+                        <div class="inner_card">
+                            <div class="card_front gc-cont">
+                                <span class="gc">Calculate GC Content</span>
+                            </div>
+                            <div class="card_back">
+                                <h3>
+                                    The percentage of G + C, is widely used to measure genomic nucleotide composition. <br>
+                                    It is calculated as <br> Count (G + C) / Count (A + T + G + C) * 100%.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="biocard">
+                        <div class="inner_card">
+                            <div class="card_front transcription">
+                                <span class="transc">DNA Transcription</span>
+                            </div>
+                            <div class="card_back">
+                                <h3>
+                                    Transcription is the process by which
+                                    the information in a strand of DNA is copied into a new molecule of messenger RNA (mRNA).
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-row">
+                <div class="col">
+                    <div class="biocard">
+                        <div class="inner_card">
+                            <div class="card_front complement">
+                                <span class="comp">DNA Complement <br> & <br> Reverse Complement</span>
+                            </div>
+                            <div class="card_back">
+                                <h3>
+                                    Reverse Complement converts a DNA sequence into its reverse, complement, or reverse-complement counterpart. <br>
+                                    You may want to work with the reverse-complement of a sequence if it contains an ORF on the reverse strand.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="biocard">
+                        <div class="inner_card">
+                            <div class="card_front translation">
+                                <span>DNA Translation</span>
+                            </div>
+                            <div class="card_back">
+                                <h3>
+                                    The process through which information encoded in messenger RNA (mRNA)
+                                    directs the addition of amino acids during protein synthesis.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form_content">
+            <h1>Please Answer All These Personal Questions</h1>
+            <form id="bioserver_form" method="post" target="_blank" action="PHP_BioServer.php" onsubmit="return validateForm()">
+                <div class="personal_info">
+                    <fieldset class="info_1">
+                        <legend class="title">Let's know some information about you</legend>
+                        <div class="one">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                            
+                            <label for="dob">Birthdate:</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+
+                        <div class="two">
+                            <label>Gender:</label>
+                            <input type="radio" name="gender" value="Male" required> &nbsp;Male
+                            <input type="radio" name="gender" value="Female"> &nbsp;Female
+                            
+                            <label for="occupation">Job Title:</label>
+                            <input type="text" id="occupation" name="occupation" placeholder="Enter Your Job Title" required>
+                        </div>  
+                        
+                        <div class="three">
+                            <label for="mail">Email:</label>
+                            <input type="email" id="mail" name="mail" placeholder="example@example.com" required>
+        
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required>
+                        </div>
+        
+                        <div class="four">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address" placeholder="Home No. Street Name - Main Street Name" required>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="vip_info">
+                    <fieldset class="usage">
+                        <legend class="title">Background Information</legend>
+                        <div class="one">
+                            <div class="question">
+                                <label>What is your background knowledge?</label>
+                            </div>
+        
+                            <div class="answers">
+                                <div class="left">
+                                    <div class="ans1">
+                                        <input type="radio" id="bio" name="back_know" value="Biology" required>
+                                        <label for="bio">Biology</label>
+                                    </div>
+            
+                                    <div class="ans2">
+                                        <input type="radio" id="cs" name="back_know" value="Computer Science">
+                                        <label for="cs">Computer Science</label>
+                                    </div>
+            
+                                    <div class="ans3">
+                                        <input type="radio" id="bioinformatics" name="back_know" value="Bioinformatics">
+                                        <label for="bioinformatics">Bioinformatics</label>
+                                    </div>
+            
+                                    <div class="ans4">
+                                        <input type="radio" id="medicine" name="back_know" value="Medicine">
+                                        <label for="medicine">Medicine</label>
+                                    </div>
+                                </div>
+        
+                                <div class="right">
+                                    <div class="ans5">
+                                        <input type="radio" id="chemistry" name="back_know" value="Chemistry">
+                                        <label for="chemistry">Chemistry</label>
+                                    </div>
+            
+                                    <div class="ans6">
+                                        <input type="radio" id="pharmacy" name="back_know" value="Pharmacy">
+                                        <label for="pharmacy">Pharmacy</label>
+                                    </div>
+            
+                                    <div class="ans7">
+                                        <input type="radio" id="biotechnology" name="back_know" value="Biotechnology">
+                                        <label for="biotechnology">Biotechnology</label>
+                                    </div>
+            
+                                    <div class="ans8">
+                                        <input type="radio" name="back_know" value="Other">
+                                        <label>Other</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="two">
+                            <div class="question">
+                                <label>Why are you using this Biological Server?</label>
+                            </div>
+        
+                            <div class="answers">
+                                <div class="ans1">
+                                    <input type="radio" id="academic" name="why_use" value="Academic" required>
+                                    <label for="academic">Academic Studies</label>
+                                </div>
+        
+                                <div class="ans2">
+                                    <input type="radio" id="research" name="why_use" value="Research">
+                                    <label>Research Field</label>
+                                </div>
+        
+                                <div class="ans3">
+                                    <input type="radio" id="business" name="why_use" value="Business">
+                                    <label>Business Needs</label>
+                                </div>
+        
+                                <div class="ans4">
+                                    <input type="radio" name="why_use" value="Other">
+                                    <label>Other</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="preferences">
+                    <fieldset>
+                        <legend class="title">Choose one of these options</legend>
+                        <div class="options">
+                            <input type="radio" id="influenza-a" name="choice" value="influenza-a" required> Influenza Virus A
+                            <br>
+                            <input type="radio" id="out-seq" name="choice" value="out-seq" > New Sequence To Insert
+                            <br>
+                            <input type="radio" id="inserted-seq" name="choice" value="inserted-seq"> Already Inserted Sequence
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="influ_choice">
+                    <fieldset>
+                        <legend class="title">Influenza Virus A</legend>
+
+                        <div class="availabel_genes">
+                            <table>
+                                <tr id="header">
+                                    <th>ID & Segment</th>
+                                    <th>Locus Tag</th>
+                                    <th>Gene Symbol</th>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>FLUAVH3N2_s1p1</td>
+                                    <td>PB2</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td>FLUAVH3N2_s2p2</td>
+                                    <td>PB1-F2</td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</td>
+                                    <td>FLUAVH3N2_s3p1</td>
+                                    <td>PA-X</td>
+                                </tr>
+
+                                <tr>
+                                    <td>4</td>
+                                    <td>FLUAVH3N2_s4p1</td>
+                                    <td>HA</td>
+                                </tr>
+
+                                <tr>
+                                    <td>5</td>
+                                    <td>FLUAVH3N2_s5p1</td>
+                                    <td>NP</td>
+                                </tr>
+
+                                <tr>
+                                    <td>6</td>
+                                    <td>FLUAVH3N2_s6p1</td>
+                                    <td>NA</td>
+                                </tr>
+
+                                <tr>
+                                    <td>7</td>
+                                    <td>FLUAVH3N2_s7p1</td>
+                                    <td>M</td>
+                                </tr>
+
+                                <tr>
+                                    <td>8</td>
+                                    <td>FLUAVH3N2_s8p1</td>
+                                    <td>NS1</td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <div class="seq_id">
+                            <label for="seq_id1">Sequence ID:</label>
+                            <input type="text" id="seq_id1" name="seq_id1" placeholder="Enter Sequence ID">
+                        </div>
+
+                        <div class="question">
+                            <label>Select any number of Biological Functions you want to perform</label>
+                        </div>
+
+                        <div class="answers">
+                            <div class="ans1">
+                                <input type="checkbox" id="calc_gc_cont1" name="calc_gc_cont1" value="calc_gc_cont">
+                                <label>Calculate GC Content</label>
+                            </div>
+    
+                            <div class="ans2">
+                                <input type="checkbox" id="dna_transc1" name="dna_transc1" value="dna_transc">
+                                <label>DNA Transcription</label>
+                            </div>
+    
+                            <div class="ans3">
+                                <input type="checkbox" id="complement1" name="complement1" value="complement">
+                                <label>Complement</label>
+                            </div>
+    
+                            <div class="ans4">
+                                <input type="checkbox" id="rev_comp1" name="rev_comp1" value="rev_comp">
+                                <label>Reverse Complement</label>
+                            </div>
+    
+                            <div class="ans5">
+                                <input type="checkbox" id="dna_trans1" name="dna_trans1" value="dna_trans">
+                                <label>DNA Translation</label>
+                            </div>
+    
+                            <div class="ans6">
+                                <input type="checkbox" id="display_influ1" name="display_influ1" value="display_influ">
+                                <label>Print Influenza A Virus Genome Sequence Data</label>
+                            </div>
+    
+                            <div class="ans7">
+                                <input type="checkbox" id="display_all1" name="display_all1" value="display_all">
+                                <label>Print All Genome Sequences and Data Inserted in Database Tables</label>
+                            </div>
+                        </div>
+    
+                    </fieldset>
+                </div>
+
+                <div class="another_seq_choice">
+                    <fieldset class="for_another_seq">
+                        <legend class="title">New Sequence To Insert</legend>
+                        <div class="one">
+                            <label for="seq1">Enter Sequence:</label>
+                            <textarea id="seq1" name="seq1" rows="10" cols="60"></textarea> 
+                        </div>
+
+                        <div class="two">
+                            <label for="seq_id2">Sequence ID:</label>
+                            <input type="text" id="seq_id2" name="seq_id2" placeholder="Enter Sequence ID">
+
+                            <label for="organism_name1">Sequence Organism Name:</label>
+                            <input type="text" id="organism_name1" name="organism_name1" placeholder="Enter Sequence Organism Name">
+                        </div>
+
+                        <div class="three">
+                            <label for="gene_type1">Gene Type:</label>
+                            <input type="text" id="gene_type1" name="gene_type1" placeholder="Enter Sequence Gene Type">
+
+                            <label for="gene_symbol1" >Gene Symbol:</label>
+                            <input type="text" id="gene_symbol1" name="gene_symbol1" placeholder="Enter Sequence Gene Symbol">
+                        </div>
+
+                        <div class="four">
+                            <label for="locus_tag1">Locus Tag:</label>
+                            <input type="text" id="locus_tag1" name="locus_tag1" placeholder="Enter Sequence Locus Tag">
+
+                            <label for="description1">Description:</label>
+                            <input type="text" id="description1" name="description1" placeholder="Enter Sequence Description">
+                        </div>
+
+                        <div class="five">
+                            <div class="question">
+                                <label>Select any number of Biological Functions you want to perform</label>
+                            </div>
+        
+                            <div class="answers">
+                                <div class="ans1">
+                                    <input type="checkbox" id="calc_gc_cont2" name="calc_gc_cont2" value="calc_gc_cont">
+                                    <label for="calc_gc_cont2">Calculate GC Content</label>
+                                </div>
+        
+                                <div class="ans2">
+                                    <input type="checkbox" id="dna_transc2" name="dna_transc2" value="dna_transc">
+                                    <label for="dna_transc2">DNA Transcription</label>
+                                </div>
+        
+                                <div class="ans3">
+                                    <input type="checkbox" id="complement2" name="complement2" value="complement">
+                                    <label for="complement2">Complement</label>
+                                </div>
+        
+                                <div class="ans4">
+                                    <input type="checkbox" id="rev_comp2" name="rev_comp2" value="rev_comp">
+                                    <label for="rev_comp2">Reverse Complement</label>
+                                </div>
+        
+                                <div class="ans5">
+                                    <input type="checkbox" id="dna_trans2" name="dna_trans2" value="dna_trans">
+                                    <label for="dna_trans2">DNA Translation</label>
+                                </div>
+        
+                                <div class="ans6">
+                                    <input type="checkbox" id="display_influ2" name="display_influ2" value="display_influ">
+                                    <label for="display_influ2">Print Influenza A Virus Genome Sequence Data</label>
+                                </div>
+        
+                                <div class="ans7">
+                                    <input type="checkbox" id="display_all2" name="display_all2" value="display_all">
+                                    <label for="display_all2">Print All Genome Sequences and Data Inserted in Database Tables</label>
+                                </div>
+                            </div>
+        
+                        </div>
+
+                    </fieldset>
+                </div>
+
+                <div class="inserted_seq">
+
+                    <fieldset class="for_inserted_seq">
+                        <legend class="title">Already Inserted Sequence</legend>
+
+                        <div class="choice">
+                            <div class="title">
+                                <label>Select the operation you want to perform</label>
+                            </div>
+                            <div class="options">
+                                <input type="radio" id="apply_fun" name="choice2" value="apply_fun"> Apply biological Function(s)
+                                <br>
+                                <input type="radio" id="update_seq" name="choice2" value="update_seq"> Update Sequence
+                                <br>
+                                <input type="radio" id="delete-seq" name="choice2" value="delete-seq"> Delete Sequence
+                            </div>
+                        </div>
+
+                        <div class="apply">
+                            <fieldset class="apply_bio_fun">
+                                <legend class="title">Apply biological Function(s)</legend>
+                                <div class="seq_id">
+                                    <label for="seq_id3">Sequence ID:</label>
+                                    <input type="text" id="seq_id3" name="seq_id3" placeholder="Enter Sequence ID">
+                                </div>
+
+                                <div class="functions">
+                                    <div class="question">
+                                        <label id="choose">Select any number of Biological Functions you want to perform</label>
+                                    </div>
+                
+                                    <div class="answers">
+                                        <div class="ans1">
+                                            <input type="checkbox" id="calc_gc_cont3" name="calc_gc_cont3" value="calc_gc_cont">
+                                            <label for="calc_gc_cont3">Calculate GC Content</label>
+                                        </div>
+                
+                                        <div class="ans2">
+                                            <input type="checkbox" id="dna_transc3" name="dna_transc3" value="dna_transc">
+                                            <label for="dna_transc3">DNA Transcription</label>
+                                        </div>
+                
+                                        <div class="ans3">
+                                            <input type="checkbox" id="complement3" name="complement3" value="complement">
+                                            <label for="complement3">Complement</label>
+                                        </div>
+                
+                                        <div class="ans4">
+                                            <input type="checkbox" id="rev_comp3" name="rev_comp3" value="rev_comp">
+                                            <label for="rev_comp3">Reverse Complement</label>
+                                        </div>
+                
+                                        <div class="ans5">
+                                            <input type="checkbox" id="dna_trans3" name="dna_trans3" value="dna_trans">
+                                            <label for="dna_trans3">DNA Translation</label>
+                                        </div>
+                
+                                        <div class="ans6">
+                                            <input type="checkbox" id="display_influ3" name="display_influ3" value="display_influ">
+                                            <label for="display_influ3">Print Influenza A Virus Genome Sequence Data</label>
+                                        </div>
+                
+                                        <div class="ans7">
+                                            <input type="checkbox" id="display_all3" name="display_all3" value="display_all">
+                                            <label for="display_all3">Print All Genome Sequences and Data Inserted in Database Tables</label>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </fieldset>
+                        </div>
+
+                        <div class="update">
+                            <fieldset class="update_seqq">
+                                <legend class="title">Update Sequence</legend>
+
+                                <div class="one">
+                                    <label for="seq2">Enter Sequence:</label>
+                                    <textarea id="seq2" name="seq2" rows="10" cols="60"></textarea> 
+                                </div>
+        
+                                <div class="two">
+                                    <label for="seq_id4">Sequence ID:</label>
+                                    <input type="text" id="seq_id4" name="seq_id4" placeholder="Enter Sequence ID">
+        
+                                    <label for="organism_name2">Sequence Organism Name:</label>
+                                    <input type="text" id="organism_name2" name="organism_name2" placeholder="Enter Sequence Organism Name">
+                                </div>
+        
+                                <div class="three">
+                                    <label for="gene_type2">Gene Type:</label>
+                                    <input type="text" id="gene_type2" name="gene_type2" placeholder="Enter Sequence Gene Type">
+        
+                                    <label for="gene_symbol2">Gene Symbol:</label>
+                                    <input type="text" id="gene_symbol2" name="gene_symbol2" placeholder="Enter Sequence Gene Symbol">
+                                </div>
+        
+                                <div class="four">
+                                    <label for="locus_tag2">Locus Tag:</label>
+                                    <input type="text" id="locus_tag2" name="locus_tag2" placeholder="Enter Sequence Locus Tag">
+        
+                                    <label for="description2" >Description:</label>
+                                    <input type="text" id="description2" name="description2" placeholder="Enter Sequence Description">
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="delete">
+                            <fieldset class="delete_seqq">
+                                <legend class="title">Delete Sequence</legend>
+                                <div class="seq_id">
+                                    <label for="seq_id5">Sequence ID:</label>
+                                    <input type="text" id="seq_id5" name="seq_id5" placeholder="Enter Sequence ID">
+                                </div>
+                            </fieldset>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="sub-res">
+                    <input type="submit" class="submit" name="submit">
+                    <input type="reset" class="reset" name="reset">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="JS_BioServer.js"></script>
+</body>
+</html>
