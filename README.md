@@ -1,6 +1,6 @@
 # BioServer Lab Implementation Influenza Virus-A BioServer
 
-Using HTML, CSS, JS, PHP and USBServer to build a biological server that provides many biological utilities.
+Using HTML, CSS, JS, PHP, SQL and USBServer to build a biological server that provides many biological utilities.
 
 ![1](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/1d7da5c0-f569-4ffc-aa23-0635d8d5405d)
 
