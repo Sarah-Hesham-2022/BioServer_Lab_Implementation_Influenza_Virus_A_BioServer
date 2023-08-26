@@ -2,32 +2,46 @@
 
 Using HTML, CSS, JS, PHP, SQL and USBServer to build a biological server that provides many biological utilities.
 
-![1](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/1d7da5c0-f569-4ffc-aa23-0635d8d5405d)
+![1](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/01cdd8bd-fea2-43a3-a61d-9c125136973c)
 
-![2](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/36705d11-5cd2-4903-8f51-9ea63ae6e8aa)
+![2](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/76f54faa-08ce-4568-829c-61c5ea9b331c)
 
-![3](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/fd6f6c4e-7c61-45e7-a51a-892932c3b3a8)
+![3](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/b2b349ea-5fc0-41f3-b94d-cbf0bd4f58fc)
 
-![4](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/005b4111-a613-4919-bb94-99cdb57b3632)
+![4](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/f9a8a92c-c154-4441-999f-93d030b5536e)
 
-![5](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/efdc1ed6-59b4-4b37-8a2b-dcac0d5cee28)
+![5](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/d765673b-ee0f-48c9-be99-8bad5e745f5f)
 
-![6](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/0ee24975-5e76-407d-8587-4eb04f5dd63f)
+![6](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/f0df6236-db03-4056-aa83-0321870d1e72)
 
-![7](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/25524106-b662-4c37-8467-3d55196cd0d1)
+![7](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/feab96cd-3b8c-4e26-8b0b-bec11d564704)
 
-![8](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/a8a90434-36ec-46e2-b0fb-ef2e37dbfd2d)
+![8](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/da7d4439-7eb0-4491-b03b-c6d24bf3424d)
 
-![9](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/12ca6a7a-8b98-4eae-8891-fbe76cec9663)
+![9](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/64bee3f5-dd03-40c7-907d-0d5c491fbf9c)
 
-![10](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/113bcac4-e3dd-4229-bd18-179eacb80485)
+![10](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/b562ce04-f6b8-4d9e-93b9-0f9d56a10c7e)
 
-![11](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/d2316075-2a5e-47a5-a49c-ee61a085c2eb)
+![11](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/36b71ac8-977d-45bc-9a8a-04b4056e8df9)
 
-![12](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/8ba96a70-8238-42f6-ba88-2d8e6f38cd6a)
+![12](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/026ec245-235a-475a-9da6-386e30e4247d)
 
-![13](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/e1a6c1db-7380-4830-8526-6d56a849ad48)
- 
+![13](https://github.com/Sarah-Hesham-2022/BioServer_Lab_Implementation_Influenza_Virus_A_BioServer/assets/112272836/5b319a86-702a-4046-81a5-924b084d2444)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
